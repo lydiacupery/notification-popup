@@ -1,0 +1,3 @@
+<div #notificationPopup [class.notification-popup-box-shown]="showNotification" class="notification-popup-box">
+  <div class="notification-popup-box-text">{{(notification$ | async)?.text}}</div>
+</div>
