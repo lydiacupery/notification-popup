@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     this.notificationStream$ = numbers.pipe(
       map(x => ({
         text: `Received notification number ${x}`,
-        displayMS: 10000
+        displayMS: 5000
       }))
     );
     this.notificationStream$.subscribe(notification =>
